@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+  --cyan: #a4e3f4;
+  --lightcyan: #d2f1f9;
+  --black: #000000;
+}
+
+.header {
+  padding: 20px;
+  background: var(--cyan);
+}
+
+.header > .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header > .wrapper > .text-container {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.main > .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+}
+
+.main > .wrapper > .content {
+  padding: 30px;
+  width: 1000px;
+  border: 2px var(--lightcyan) solid;
+  border-radius: 10px;
+}
+
+.main > .wrapper > .content > .text-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.player-score,
+.computer-score {
+  text-align: center;
+  flex: 1;
+  font-size: 0.8rem;
+}
+
+.main > .wrapper > .content > .text-wrapper > .text-container {
+  font-size: 2rem;
+  text-align: center;
+  flex: 5;
+}
+
+.main > .wrapper > .content > .button-wrapper {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px 0px;
+}
+
+.rock-img,
+.paper-img,
+.scissors-img {
+  width: 50px;
+}
+
+.selection-btn {
+  cursor: pointer;
+  padding: 20px;
+  border: 2px var(--black) solid;
+  border-radius: 10px;
+  background: none;
+}
+
+.selection-btn:hover {
+  transform: scale(1.05) translateY(-5px);
+  transition: 200ms;
+}
