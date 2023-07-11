@@ -48,6 +48,7 @@ body {
 .main > .wrapper > .content {
   padding: 30px;
   width: 1000px;
+  height: 420px;
   border: 2px var(--lightcyan) solid;
   border-radius: 10px;
 }
@@ -78,7 +79,10 @@ body {
 
 .rock-img,
 .paper-img,
-.scissors-img {
+.scissors-img,
+.player-choice-img,
+.compare-box-img,
+.computer-choice-img {
   width: 50px;
 }
 
@@ -93,4 +97,44 @@ body {
 .selection-btn:hover {
   transform: scale(1.05) translateY(-5px);
   transition: 200ms;
+}
+
+.round-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+}
+
+.player-choice,
+.computer-choice,
+.compare-box {
+  padding: 20px;
+  border: 2px var(--black) solid;
+  border-radius: 10px;
+}
+
+.wrapper-nextturn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.next-turn {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.05rem;
+  cursor: pointer;
+  padding: 12px 20px;
+  border-radius: 10px;
+  background: none;
+}
+
+.next-turn:hover {
+  transform: scale(1.05) translateY(-5px);
+  transition: 200ms;
+}
+
+.invisible {
+  display: none;
 }

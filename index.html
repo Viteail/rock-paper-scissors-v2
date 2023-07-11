@@ -17,11 +17,14 @@
       <div class="main">
         <div class="wrapper">
           <div class="content">
+            <div class="round-wrapper">Round: <span id="round">1</span></div>
             <div class="text-wrapper">
               <div class="player-score">
                 Player Score: <span id="player-score">0</span>
               </div>
-              <div class="text-container">Select Your Move!</div>
+              <div id="result-display" class="text-container">
+                Select Your Move!
+              </div>
               <div class="computer-score">
                 Computer Score: <span id="computer-score">0</span>
               </div>
@@ -50,6 +53,18 @@
                   />
                 </button>
               </div>
+              <div class="player-choice invisible">
+                <img class="player-choice-img" src="" />
+              </div>
+              <div class="compare-box invisible">
+                <img class="compare-box-img" src="" />
+              </div>
+              <div class="computer-choice invisible">
+                <img class="computer-choice-img" src="" />
+              </div>
+            </div>
+            <div class="wrapper-nextturn invisible">
+              <button class="next-turn">Next Turn</button>
             </div>
           </div>
         </div>
