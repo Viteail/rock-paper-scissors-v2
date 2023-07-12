@@ -17,14 +17,14 @@ body {
 }
 
 :root {
-  --cyan: #a4e3f4;
-  --lightcyan: #d2f1f9;
+  --darkblue: #023047;
   --black: #000000;
+  --white: #ffffff;
 }
 
 .header {
   padding: 20px;
-  background: var(--cyan);
+  background: var(--darkblue);
 }
 
 .header > .wrapper {
@@ -34,6 +34,7 @@ body {
 }
 
 .header > .wrapper > .text-container {
+  color: var(--white);
   text-align: center;
   font-size: 2rem;
 }
@@ -48,8 +49,8 @@ body {
 .main > .wrapper > .content {
   padding: 30px;
   width: 1000px;
-  height: 420px;
-  border: 2px var(--lightcyan) solid;
+  min-height: 430px;
+  border: 2px var(--darkblue) solid;
   border-radius: 10px;
 }
 
@@ -68,7 +69,7 @@ body {
 .main > .wrapper > .content > .text-wrapper > .text-container {
   font-size: 2rem;
   text-align: center;
-  flex: 5;
+  flex: 2;
 }
 
 .main > .wrapper > .content > .button-wrapper {
@@ -137,4 +138,22 @@ body {
 
 .invisible {
   display: none;
+}
+
+@media screen and (max-width: 400px) {
+  .button-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .main > .wrapper > .content > .text-wrapper {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .main > .wrapper > .content > .text-wrapper > .text-container {
+    font-size: 1.1rem;
+    font-weight: 900;
+  }
 }

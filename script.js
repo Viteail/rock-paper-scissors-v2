@@ -133,8 +133,6 @@ const playRound = (playerSelection, computerSelection) => {
     result.pcImgSrc,
     result.compareImgSrc
   );
-
-  console.log(result.label, Scores.player, Scores.computer, round);
 };
 
 const createAndDisplayElement = (
